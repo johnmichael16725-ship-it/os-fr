@@ -19,12 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
             return; // Function ko yahin rok do
         }
 
-        // Agar sab theek hai, to ek message dikhao
-        // NOTE: Abhi hum asal login nahi kar rahe, sirf test kar rahe hain.
-        alert(`Welcome! You tried to log in with:\nEmail: ${email}\nPassword: ${password}`);
+        // --- YAHAN ASAL TABDEELI HAI ---
+        // Abhi ke liye, hum farz kar lete hain ke koi bhi email/password theek hai.
+        // Hum sirf test kar rahe hain.
+        
+        alert('Login Successful! Redirecting to dashboard...');
 
-        // Yahan par hum baad mein asal login (GitHub API call) ka code likhenge
+        // User ko dashboard.html page par bhej do
+        window.location.href = 'dashboard.html';
 
+        // Asal login ka logic (GitHub API call) hum baad mein yahan daalenge.
+        
     });
 
 });
